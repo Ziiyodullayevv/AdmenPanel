@@ -9,10 +9,13 @@ import {
   Nav,
 } from "./styled";
 import yuksalish from "../../assets/icons/yuksalish.png";
+import { navbar } from "../../utils/navbar";
+import Search from "../Search";
+import { Outlet } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="container">
+    <>
       <Wrapper>
         <Navigation>
           <Logo>
@@ -20,14 +23,21 @@ const Navbar = () => {
             <LogoDescription>Admin Panel</LogoDescription>
           </Logo>
           <Nav>
-            <Link>Biz haqimizda</Link>
-            <Link>Biz haqimizda</Link>
-            <Link>Biz haqimizda</Link>
-            <Link>Biz haqimizda</Link>
+            {navbar.map(({ path, title, hidden }, index) => {
+              return (
+                !hidden && (
+                  <Link variant="text" key={index} to={path}>
+                    {title}
+                  </Link>
+                )
+              );
+            })}
           </Nav>
         </Navigation>
       </Wrapper>
-    </div>
+      <Search />
+      <Outlet />
+    </>
   );
 };
 
