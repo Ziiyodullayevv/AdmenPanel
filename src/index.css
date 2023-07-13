@@ -8,11 +8,10 @@
 
 :root {
   --c1: rgb(255, 255, 255);
-  --c2: #f1f1f1;
-  --c3: #ec6806;
-  --c4: #032232;
-  --c5: #03223225;
-  --b1: #f1f1f1;
+  --c2: #f6f7f8;
+  --c3: #869ab5;
+  --c4: #4e6ba5;
+  --t1: #3f4755;
 }
 
 .container {
@@ -39,3 +38,113 @@ span {
 /* qoshiq linklari */
 /* https://youtu.be/_U0PrwLpb_Q */
 /* https://youtu.be/fkz8UuEDIaE */
+
+/* icons style  */
+
+.icon {
+  font-size: 1.2rem;
+}
+
+.icon.menu {
+  color: var(--c3);
+}
+
+.menu-card {
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  align-items: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+.menu-card:hover {
+  background-color: var(--c2);
+  cursor: pointer;
+}
+.menu-card:active {
+  transform: scale(0.9);
+}
+main {
+  width: 100%;
+}
+
+:where(.css-dev-only-do-not-override-14wwjjs).ant-table-wrapper
+  .ant-table-container
+  table
+  > thead
+  > tr:first-child
+  > *:last-child {
+  border-radius: 0;
+}
+
+:where(.css-dev-only-do-not-override-14wwjjs).ant-table-wrapper
+  .ant-table-container
+  table
+  > thead
+  > tr:first-child
+  > *:first-child {
+  border-radius: 0 !important;
+}
+
+.table-card {
+  border: 1px solid rgb(239, 239, 239);
+  background-color: var(--c1);
+  border-radius: 0 0 10px 10px;
+  padding-bottom: 5px;
+}
+
+.btn-card {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 0px 50px;
+  padding-bottom: 30px;
+}
+
+:where(.css-dev-only-do-not-override-14wwjjs).ant-table-wrapper
+  .ant-table-tbody
+  > tr
+  > th,
+:where(.css-dev-only-do-not-override-14wwjjs).ant-table-wrapper
+  .ant-table-tbody
+  > tr
+  > td {
+  transition: background 0.2s, border-color 0.2s;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 7px 20px;
+}
+
+:where(.css-dev-only-do-not-override-14wwjjs).ant-table-wrapper
+  .ant-table-tbody
+  > tr:nth-child(even) {
+  background-color: var(--c2);
+}
+
+:where(.css-dev-only-do-not-override-14wwjjs).ant-table-wrapper
+  .ant-table-container
+  table
+  > thead
+  > tr:first-child
+  > *:first-child {
+  border-radius: 0 !important;
+  padding: 0 20px;
+}
+
+:where(.css-dev-only-do-not-override-14wwjjs).ant-table-wrapper
+  .ant-table-thead
+  > tr
+  > th,
+:where(.css-dev-only-do-not-override-14wwjjs).ant-table-wrapper
+  .ant-table-thead
+  > tr
+  > td {
+  position: relative;
+  color: rgba(0, 0, 0, 0.88);
+  font-weight: 600;
+  text-align: start;
+  background: #fafafa;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background 0.2s ease;
+  padding: 10px 20px;
+}

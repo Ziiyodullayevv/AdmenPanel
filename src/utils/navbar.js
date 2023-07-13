@@ -5,11 +5,15 @@ import useUniqueId from "../hooks/useId";
 
 // pages:
 import Admin from "../components/Admin";
-import AllUser from "../components/AllUser";
+import AllUser from "../components/User";
 import Region from "../components/Region";
 
 //icons:
-import { FaUsers } from "react-icons/fa";
+import {
+  BsFillBuildingsFill,
+  BsFillPeopleFill,
+  BsFillShieldLockFill,
+} from "react-icons/bs";
 
 // React.lazy pages:
 // const AllUserPage = React.lazy(() => import("../pages/AllUser"));
@@ -19,29 +23,32 @@ import { FaUsers } from "react-icons/fa";
 export const navbar = [
   {
     id: useUniqueId,
-    title: "All Users",
+    title: "Regions",
     path: "/",
-    element: <AllUser />,
+    icon: <BsFillBuildingsFill className="icon menu" />,
+    element: <Region />,
     private: false,
     hidden: false,
-    icon: <FaUsers />,
+  },
+  {
+    id: useUniqueId,
+    title: "All Users",
+    path: "/users",
+    element: <AllUser />,
+    icon: <BsFillPeopleFill className="icon" />,
+    private: false,
+    hidden: false,
   },
   {
     id: useUniqueId,
     title: "Admins",
     path: "/admin",
     element: <Admin />,
+    icon: <BsFillShieldLockFill className="icon" />,
     private: false,
     hidden: false,
   },
-  {
-    id: useUniqueId,
-    title: "Regions",
-    path: "/region",
-    element: <Region />,
-    private: false,
-    hidden: false,
-  },
+
   //   {
   //     id: useUniqueId,
   //     title: "Sign In",

@@ -6,10 +6,11 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--c5);
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  background-color: var(--c2);
+  border: 1px solid var(--c3);
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
   &:hover {
     cursor: pointer;
     opacity: 0.7;
@@ -19,14 +20,19 @@ const Wrapper = styled.div`
   }
 `;
 const Edit = styled(edit)`
+  width: 16px;
+  height: auto;
   & path {
     fill: blue;
+    width: 200px;
   }
   :hover {
     cursor: pointer;
   }
 `;
 const Trush = styled(trush)`
+  width: 16px;
+  height: auto;
   & path {
     fill: red;
   }

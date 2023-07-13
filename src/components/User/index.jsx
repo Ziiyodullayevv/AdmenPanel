@@ -6,7 +6,7 @@ const Region = () => {
   return (
     <>
       <Wrapper>
-        <Title>Feliallarimiz</Title>
+        <Title>Barcha O'quvchilarimiz</Title>
         <Search />
         <RegionTable />
       </Wrapper>

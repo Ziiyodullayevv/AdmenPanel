@@ -3,9 +3,6 @@ import { ReactComponent as edit } from "../../assets/icons/edit.svg";
 import { ReactComponent as trush } from "../../assets/icons/delete.svg";
 
 const Wrapper = styled.div`
-  margin-top: 20px;
-  width: 80%;
-  margin-left: 20%;
   background-color: var(--c2);
   padding: 50px;
 `;

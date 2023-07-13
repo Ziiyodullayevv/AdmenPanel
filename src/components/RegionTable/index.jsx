@@ -1,6 +1,7 @@
 import React from "react";
 import { Table } from "antd";
 import { Edit, Trush, Wrapper } from "./styled";
+
 const dataSource = [
   {
     id: "1",
@@ -10,14 +11,21 @@ const dataSource = [
     age: 32,
     address: "10 Downing Street",
     edit: (
-      <Wrapper>
-        <Edit />
-      </Wrapper>
-    ),
-    delete: (
-      <Wrapper>
-        <Trush />
-      </Wrapper>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "start",
+          alignItems: "center",
+          gap: "1rem",
+        }}
+      >
+        <Wrapper>
+          <Edit />
+        </Wrapper>
+        <Wrapper>
+          <Trush />
+        </Wrapper>
+      </div>
     ),
   },
   {
@@ -28,14 +36,21 @@ const dataSource = [
     age: 32,
     address: "10 Downing Street",
     edit: (
-      <Wrapper>
-        <Edit />
-      </Wrapper>
-    ),
-    delete: (
-      <Wrapper>
-        <Trush />
-      </Wrapper>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "start",
+          alignItems: "center",
+          gap: "1rem",
+        }}
+      >
+        <Wrapper>
+          <Edit />
+        </Wrapper>
+        <Wrapper>
+          <Trush />
+        </Wrapper>
+      </div>
     ),
   },
   {
@@ -46,14 +61,21 @@ const dataSource = [
     age: 32,
     address: "10 Downing Street",
     edit: (
-      <Wrapper>
-        <Edit />
-      </Wrapper>
-    ),
-    delete: (
-      <Wrapper>
-        <Trush />
-      </Wrapper>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "start",
+          alignItems: "center",
+          gap: "1rem",
+        }}
+      >
+        <Wrapper>
+          <Edit />
+        </Wrapper>
+        <Wrapper>
+          <Trush />
+        </Wrapper>
+      </div>
     ),
   },
   {
@@ -64,14 +86,21 @@ const dataSource = [
     age: 32,
     address: "10 Downing Street",
     edit: (
-      <Wrapper>
-        <Edit />
-      </Wrapper>
-    ),
-    delete: (
-      <Wrapper>
-        <Trush />
-      </Wrapper>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "start",
+          alignItems: "center",
+          gap: "1rem",
+        }}
+      >
+        <Wrapper>
+          <Edit />
+        </Wrapper>
+        <Wrapper>
+          <Trush />
+        </Wrapper>
+      </div>
     ),
   },
   {
@@ -82,14 +111,21 @@ const dataSource = [
     age: 32,
     address: "10 Downing Street",
     edit: (
-      <Wrapper>
-        <Edit />
-      </Wrapper>
-    ),
-    delete: (
-      <Wrapper>
-        <Trush />
-      </Wrapper>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "start",
+          alignItems: "center",
+          gap: "1rem",
+        }}
+      >
+        <Wrapper>
+          <Edit />
+        </Wrapper>
+        <Wrapper>
+          <Trush />
+        </Wrapper>
+      </div>
     ),
   },
   {
@@ -100,14 +136,21 @@ const dataSource = [
     age: 32,
     address: "10 Downing Street",
     edit: (
-      <Wrapper>
-        <Edit />
-      </Wrapper>
-    ),
-    delete: (
-      <Wrapper>
-        <Trush />
-      </Wrapper>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "start",
+          alignItems: "center",
+          gap: "1rem",
+        }}
+      >
+        <Wrapper>
+          <Edit />
+        </Wrapper>
+        <Wrapper>
+          <Trush />
+        </Wrapper>
+      </div>
     ),
   },
   {
@@ -118,14 +161,121 @@ const dataSource = [
     age: 32,
     address: "10 Downing Street",
     edit: (
-      <Wrapper>
-        <Edit />
-      </Wrapper>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "start",
+          alignItems: "center",
+          gap: "1rem",
+        }}
+      >
+        <Wrapper>
+          <Edit />
+        </Wrapper>
+        <Wrapper>
+          <Trush />
+        </Wrapper>
+      </div>
     ),
-    delete: (
-      <Wrapper>
-        <Trush />
-      </Wrapper>
+  },
+  {
+    id: "8",
+    key: 8,
+    felial: "Toshkent",
+    fullName: "Mike Smith",
+    age: 32,
+    address: "10 Downing Street",
+    edit: (
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "start",
+          alignItems: "center",
+          gap: "1rem",
+        }}
+      >
+        <Wrapper>
+          <Edit />
+        </Wrapper>
+        <Wrapper>
+          <Trush />
+        </Wrapper>
+      </div>
+    ),
+  },
+  {
+    id: "9",
+    key: 9,
+    felial: "Toshkent",
+    fullName: "Mike Smith",
+    age: 32,
+    address: "10 Downing Street",
+    edit: (
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "start",
+          alignItems: "center",
+          gap: "1rem",
+        }}
+      >
+        <Wrapper>
+          <Edit />
+        </Wrapper>
+        <Wrapper>
+          <Trush />
+        </Wrapper>
+      </div>
+    ),
+  },
+  {
+    id: "10",
+    key: 10,
+    felial: "Toshkent",
+    fullName: "Mike Smith",
+    age: 32,
+    address: "10 Downing Street",
+    edit: (
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "start",
+          alignItems: "center",
+          gap: "1rem",
+        }}
+      >
+        <Wrapper>
+          <Edit />
+        </Wrapper>
+        <Wrapper>
+          <Trush />
+        </Wrapper>
+      </div>
+    ),
+  },
+  {
+    id: "11",
+    key: 10,
+    felial: "Toshkent",
+    fullName: "Mike Smith",
+    age: 32,
+    address: "10 Downing Street",
+    edit: (
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "start",
+          alignItems: "center",
+          gap: "1rem",
+        }}
+      >
+        <Wrapper>
+          <Edit />
+        </Wrapper>
+        <Wrapper>
+          <Trush />
+        </Wrapper>
+      </div>
     ),
   },
 ];
@@ -147,33 +297,26 @@ const columns = [
     dataIndex: "fullName",
     key: "last",
   },
-  {
-    title: "Age",
-    dataIndex: "age",
-    key: "age",
-  },
+
   {
     title: "Address",
     dataIndex: "address",
     key: "address",
   },
   {
-    title: "Edit",
+    title: "Action",
     dataIndex: "edit",
-    key: "address",
-  },
-  {
-    title: "Delete",
-    dataIndex: "delete",
     key: "address",
   },
 ];
 
 const RegionTable = () => {
   return (
-    <div>
-      <Table dataSource={dataSource} columns={columns} />
-    </div>
+    <>
+      <div className="table-card">
+        <Table dataSource={dataSource} columns={columns} />
+      </div>
+    </>
   );
 };
 
