@@ -36,16 +36,14 @@ const Nav = styled.div`
   }
 `;
 
+const LinkWrapper = styled.div`
+  display: flex;
+  justify-content: start;
+  align-items: center;
+`;
+
 const Link = styled(NavLink)`
   text-decoration: none;
-  color: var(--c4);
-  font-weight: 700;
-  padding: 0 32px;
-  transition: all 0.3s ease;
-  padding: 15px;
-  border-radius: 5px;
-  &:hover {
-  }
 `;
 
 const Logo = styled.div`
@@ -68,4 +66,13 @@ const LogoDescription = styled.h4`
   letter-spacing: -2px;
 `;
 
-export { Wrapper, Link, Navigation, Logo, LogoDescription, Img, Nav };
+export {
+  Wrapper,
+  LinkWrapper,
+  Link,
+  Navigation,
+  Logo,
+  LogoDescription,
+  Img,
+  Nav,
+};

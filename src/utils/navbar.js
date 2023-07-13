@@ -1,10 +1,15 @@
 import React from "react";
+
+// useId hook:
 import useUniqueId from "../hooks/useId";
 
 // pages:
 import Admin from "../components/Admin";
 import AllUser from "../components/AllUser";
 import Region from "../components/Region";
+
+//icons:
+import { FaUsers } from "react-icons/fa";
 
 // React.lazy pages:
 // const AllUserPage = React.lazy(() => import("../pages/AllUser"));
@@ -15,10 +20,11 @@ export const navbar = [
   {
     id: useUniqueId,
     title: "All Users",
-    path: "/users",
+    path: "/",
     element: <AllUser />,
     private: false,
     hidden: false,
+    icon: <FaUsers />,
   },
   {
     id: useUniqueId,
