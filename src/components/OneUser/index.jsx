@@ -4,7 +4,7 @@ import Tables from "../Table";
 import Search from "../Search";
 import { useNavigate } from "react-router-dom";
 
-const Region = () => {
+const OneUser = () => {
   const navigate = useNavigate();
   const [dataSource, setDataSource] = useState([]);
   const dataType = "users";
@@ -24,15 +24,14 @@ const Region = () => {
       dataIndex: "id",
     },
     {
-      title: "Filiallar",
-      dataIndex: "university",
-      render: (text) => (
-        <div onClick={() => navigate("/region/branch")} className="click">
-          {text}
-        </div>
-      ),
+      title: "Ismi",
+      dataIndex: "firstName",
     },
-    { title: "Address", dataIndex: "macAddress" },
+    {
+      title: "Familiyasi",
+      dataIndex: "lastName",
+    },
+    { title: "Yoshi", dataIndex: "age" },
     {
       title: "Action",
       render: () => (
@@ -58,7 +57,7 @@ const Region = () => {
   return (
     <>
       <Wrapper>
-        <Title>Filiallarimiz</Title>
+        <Title>User</Title>
         <Search />
         <Tables dataSource={dataSource} columns={columns} />
       </Wrapper>
@@ -69,4 +68,4 @@ const Region = () => {
   );
 };
 
-export default Region;
+export default OneUser;

@@ -40,22 +40,20 @@ const Navbar = () => {
           {navbar.map(({ path, title, hidden, icon }, index) => {
             return (
               !hidden && (
-                <>
-                  <Link
-                    style={{ padding: isOpen ? "15px" : "15px" }}
-                    key={index + 1}
-                    to={path}
+                <Link
+                  style={{ padding: isOpen ? "15px" : "15px" }}
+                  key={index + 1}
+                  to={path}
+                >
+                  {icon}
+                  <p
+                    style={{
+                      display: isOpen ? "block" : "none",
+                    }}
                   >
-                    {icon}
-                    <p
-                      style={{
-                        display: isOpen ? "block" : "none",
-                      }}
-                    >
-                      {title}
-                    </p>
-                  </Link>
-                </>
+                    {title}
+                  </p>
+                </Link>
               )
             );
           })}

@@ -148,3 +148,16 @@ main {
   transition: background 0.2s ease;
   padding: 10px 20px;
 }
+
+.click {
+  text-decoration: underline;
+}
+
+.click:hover {
+  cursor: pointer;
+  color: var(--t1);
+}
+
+.click:active {
+  color: var(--c4);
+}

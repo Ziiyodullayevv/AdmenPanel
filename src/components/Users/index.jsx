@@ -2,11 +2,10 @@ import React, { useState, useEffect } from "react";
 import { Title, Wrapper, Btn, Action, Edit, Trush } from "./styled";
 import Tables from "../Table";
 import Search from "../Search";
-import { useNavigate } from "react-router-dom";
 
-const Region = () => {
-  const navigate = useNavigate();
+const Users = () => {
   const [dataSource, setDataSource] = useState([]);
+
   const dataType = "users";
 
   useEffect(() => {
@@ -19,20 +18,12 @@ const Region = () => {
   }, []);
 
   const columns = [
-    {
-      title: "#",
-      dataIndex: "id",
-    },
-    {
-      title: "Filiallar",
-      dataIndex: "university",
-      render: (text) => (
-        <div onClick={() => navigate("/region/branch")} className="click">
-          {text}
-        </div>
-      ),
-    },
-    { title: "Address", dataIndex: "macAddress" },
+    { title: "#", dataIndex: "id" },
+    { title: "Ismi", dataIndex: "firstName" },
+    { title: "Familiyasi", dataIndex: "lastName" },
+    { title: "Yoshi", dataIndex: "age" },
+    { title: "Boshlagan kuni", dataIndex: "birthDate" },
+    { title: "Guruh rahbari", dataIndex: "maidenName" },
     {
       title: "Action",
       render: () => (
@@ -54,11 +45,10 @@ const Region = () => {
       ),
     },
   ];
-
   return (
     <>
       <Wrapper>
-        <Title>Filiallarimiz</Title>
+        <Title>Barcha O'quvchilar ro'yhati</Title>
         <Search />
         <Tables dataSource={dataSource} columns={columns} />
       </Wrapper>
@@ -69,4 +59,4 @@ const Region = () => {
   );
 };
 
-export default Region;
+export default Users;
