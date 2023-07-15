@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Title, Wrapper, Btn, Action, Edit, Trush } from "./styled";
 import Tables from "../Table";
 import Search from "../Search";
-import { useNavigate } from "react-router-dom";
 
 const OneUser = () => {
   const [dataSource, setDataSource] = useState([]);
