@@ -5,7 +5,6 @@ import Search from "../Search";
 import { useNavigate } from "react-router-dom";
 
 const OneUser = () => {
-  const navigate = useNavigate();
   const [dataSource, setDataSource] = useState([]);
   const dataType = "users";
 
