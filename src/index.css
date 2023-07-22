@@ -95,7 +95,7 @@ main {
 
 .btn-card {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   margin-top: 2rem;
   padding: 0px 50px;
@@ -110,7 +110,7 @@ main {
   .ant-table-tbody
   > tr
   > td {
-  transition: background 0.2s, border-color 0.2s;
+  transition: all 0.2s, border-color 0.2s;
   border-bottom: 1px solid #f0f0f0;
   padding: 7px 20px;
 }
@@ -145,7 +145,7 @@ main {
   text-align: start;
   background: #fafafa;
   border-bottom: 1px solid #f0f0f0;
-  transition: background 0.2s ease;
+  transition:all 0.2s ease;
   padding: 10px 20px;
 }
 
