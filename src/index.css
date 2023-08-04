@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,500;0,700;1,300;1,600&display=swap");
+
+:root {
+  --c1: rgb(255, 255, 255);
+  --c2: #f6f7f8;
+  --c3: #869ab5;
+  --c4: #4e6ba5;
+  --t1: #3f4755;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: var(--c2);
+  font-family: "Montserrat", sans-serif;
+}
+
+.width {
+  width: 100%;
+  text-align: start;
+}
+
+span {
+  color: var(--c6);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* qoshiq linklari */
+/* https://youtu.be/_U0PrwLpb_Q */
+/* https://youtu.be/fkz8UuEDIaE */
+
+/* icons style  */
+
+.icon {
+  font-size: 1.2rem;
+}
+
+.icon.menu {
+  color: var(--c3);
+}
+
+.menu-card {
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  align-items: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+.menu-card:hover {
+  background-color: var(--c2);
+  cursor: pointer;
+}
+.menu-card:active {
+  transform: scale(0.9);
+}
+main {
+  width: 100%;
+}
+
+:where(.css-dev-only-do-not-override-14wwjjs).ant-table-wrapper
+  .ant-table-container
+  table
+  > thead
+  > tr:first-child
+  > *:last-child {
+  border-radius: 0;
+}
+
+:where(.css-dev-only-do-not-override-14wwjjs).ant-table-wrapper
+  .ant-table-container
+  table
+  > thead
+  > tr:first-child
+  > *:first-child {
+  border-radius: 0 !important;
+}
+
+.table-card {
+  border: 1px solid rgb(239, 239, 239);
+  background-color: var(--c1);
+  border-radius: 0 0 10px 10px;
+  padding-bottom: 5px;
+}
+
+.btn-card {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 0px 50px;
+  padding-bottom: 30px;
+}
+
+:where(.css-dev-only-do-not-override-14wwjjs).ant-table-wrapper
+  .ant-table-tbody
+  > tr
+  > th,
+:where(.css-dev-only-do-not-override-14wwjjs).ant-table-wrapper
+  .ant-table-tbody
+  > tr
+  > td {
+  transition: all 0.2s, border-color 0.2s;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 7px 20px;
+}
+
+:where(.css-dev-only-do-not-override-14wwjjs).ant-table-wrapper
+  .ant-table-tbody
+  > tr:nth-child(even) {
+  background-color: var(--c2);
+}
+
+:where(.css-dev-only-do-not-override-14wwjjs).ant-table-wrapper
+  .ant-table-container
+  table
+  > thead
+  > tr:first-child
+  > *:first-child {
+  border-radius: 0 !important;
+  padding: 0 20px;
+}
+
+:where(.css-dev-only-do-not-override-14wwjjs).ant-table-wrapper
+  .ant-table-thead
+  > tr
+  > th,
+:where(.css-dev-only-do-not-override-14wwjjs).ant-table-wrapper
+  .ant-table-thead
+  > tr
+  > td {
+  position: relative;
+  color: rgba(0, 0, 0, 0.88);
+  font-weight: 600;
+  text-align: start;
+  background: #fafafa;
+  border-bottom: 1px solid #f0f0f0;
+  transition:all 0.2s ease;
+  padding: 10px 20px;
+}
+
+.click {
+  text-decoration: underline;
+}
+
+.click:hover {
+  cursor: pointer;
+  color: var(--t1);
+}
+
+.click:active {
+  color: var(--c4);
+}
