@@ -17,7 +17,7 @@ const Root = () => {
             return <Route key={id} path={path} element={element} />;
           })}
         </Route>
-        <Route exact path="/filial" element={<Navigate to={"/filial"} />} />
+        <Route exact path="/" element={<Navigate to={"/user"} />} />
         <Route path="*" element={<h1>Not fount 404</h1>} />
       </Routes>
     </Router>

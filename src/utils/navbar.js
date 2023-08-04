@@ -27,7 +27,7 @@ export const navbar = [
   {
     id: useUniqueId,
     title: "Filiallar",
-    path: "/filial",
+    path: "/",
     icon: <BsFillBuildingsFill className="icon" />,
     element: <Region />,
     private: false,
